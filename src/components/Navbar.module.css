@@ -1,3 +1,72 @@
-.navbarContainer {
+.header {
+    height: 70px;
     background-color: var(--color1);
+    overflow: hidden;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+li {
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+.navbarContainer {
+    display: none;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.showMenu {
+    display: flex;
+    z-index: 998;
+    background-color: var(--color1);
+    position: fixed;
+    width: 100%;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.modalNavbar {
+    height: 210px;
+    width: 100%;
+}
+
+.modalNavbarItems {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.modalNavbarItems ul {
+    width: 100%;
+}
+
+.modalNavbarItems li {
+    padding: 10px;
+}
+
+/* @media (min-width: 992px) {
+    .showMenu {
+        display: none;
+    }
+    .hamburgerReact {
+        display: none;
+    }
+    .header {
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+} */
